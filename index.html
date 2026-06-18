@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="row-header">
+            <div class="col-nama">Arul store</div>
+            <div class="col-logo">LOGO TOKO</div>
+        </header>
+
+        <section class="row-body">
+            
+            <main class="col-main">
+                
+                <div id="halaman-utama">
+                    <div class="judul-utama">TAMPILAN 6 PRODUK BERBEDA</div>
+                    <div class="grid-produk">
+                        <div class="produk-item" onclick="bukaDetail('Produk 1', 'https://placehold.co/200x200/png?text=P1')">
+                            <img src="https://placehold.co/200x200/png?text=P1" alt="Produk 1">
+                            <div>Produk 1</div>
+                        </div>
+                        <div class="produk-item" onclick="bukaDetail('Produk 2', 'https://placehold.co/200x200/png?text=P2')">
+                            <img src="https://placehold.co/200x200/png?text=P2" alt="Produk 2">
+                            <div>Produk 2</div>
+                        </div>
+                        <div class="produk-item" onclick="bukaDetail('Produk 3', 'https://placehold.co/200x200/png?text=P3')">
+                            <img src="https://placehold.co/200x200/png?text=P3" alt="Produk 3">
+                            <div>Produk 3</div>
+                        </div>
+                        <div class="produk-item" onclick="bukaDetail('Produk 4', 'https://placehold.co/200x200/png?text=P4')">
+                            <img src="https://placehold.co/200x200/png?text=P4" alt="Produk 4">
+                            <div>Produk 4</div>
+                        </div>
+                        <div class="produk-item" onclick="bukaDetail('Produk 5', 'https://placehold.co/200x200/png?text=P5')">
+                            <img src="https://placehold.co/200x200/png?text=P5" alt="Produk 5">
+                            <div>Produk 5</div>
+                        </div>
+                        <div class="produk-item" onclick="bukaDetail('Produk 6', 'https://placehold.co/200x200/png?text=P6')">
+                            <img src="https://placehold.co/200x200/png?text=P6" alt="Produk 6">
+                            <div>Produk 6</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="halaman-detail">
+                    
+                    <div class="detail-deskripsi">
+                        <div class="teks-tengah">
+                            <span id="teks-deskripsi-default">DESKRIPSI PRODUK</span>
+                            <p id="nama-produk-teks" style="display: none; margin-top:10px;"></p>
+                        </div>
+                        
+                        <div class="btn-wrapper">
+                            <button class="btn-kembali" onclick="kembaliKeUtama()">BUTTON KEMBALI</button>
+                        </div>
+                    </div>
+
+                    <div class="detail-gambar-box">
+                        <span id="teks-gambar-default">GAMBAR<br>PRODUK</span>
+                        <img id="gambar-produk-detail" src="" alt="Gambar Detail" style="display: none;">
+                    </div>
+
+                </div>
+
+            </main>
+
+            <aside class="col-sidebar">
+                <div class="sidebar-judul">TAMPILKAN 3 LOGO<br>PRODUK</div>
+                <div class="logo-produk-item">Logo 1</div>
+                <div class="logo-produk-item">Logo 2</div>
+                <div class="logo-produk-item">Logo 3</div>
+            </aside>
+
+        </section>
+
+        <footer class="row-footer">
+            FOOTER
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
