@@ -1,4 +1,3 @@
-/* Menghilangkan jarak bawaan browser agar rapi */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +10,6 @@ body {
     padding: 40px 20px;
 }
 
-/* Kotak utama pembungkus seluruh isi web */
 .wrapper {
     max-width: 900px;
     margin: 0 auto;
@@ -22,43 +20,41 @@ body {
     min-height: 600px;
 }
 
-/* === BAGIAN HEADER === */
 .row-header {
     display: flex;
     border-bottom: 2px solid black;
     height: 100px;
 }
 .col-nama {
-    flex: 7; /* Lebar kolom kiri */
+    width: 70%; 
     border-right: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
 }
-.col-logo {
-    flex: 3; /* Lebar kolom kanan */
+.col-logo  {
+    width: 30%; 
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
 }
 
-/* === BAGIAN TENGAH (Kiri dan Kanan) === */
 .row-body {
     display: flex;
-    flex: 1; /* Mengisi sisa tinggi */
+    flex: 1;
 }
 .col-main {
-    flex: 7;
+    width: 70%;
     border-right: 2px solid black;
     padding: 20px;
     display: flex;
     flex-direction: column;
 }
 .col-sidebar {
-    flex: 3;
-    padding: 20px;
+    width: 30%;
+    padding: 60px 20px 20px 20px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,17 +62,12 @@ body {
     text-align: center;
 }
 
-/* === HALAMAN UTAMA (6 Kotak Produk) === */
 #halaman-utama {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
-.judul-utama {
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
+
 .grid-produk {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -105,20 +96,18 @@ body {
     border: 1px solid #ccc;
 }
 
-/* === HALAMAN DESKRIPSI (Sesuai Gambar 2) === */
 #halaman-detail {
-    display: none; /* Awalnya disembunyikan */
+    display: none; 
     height: 100%;
-    gap: 20px; /* Jarak antara kotak deskripsi dan gambar */
+    gap: 20px;
 }
 
-/* Kotak Kiri (Deskripsi) */
 .detail-deskripsi {
-    flex: 1.5; /* Proporsi lebih lebar */
+    flex: 1.5; 
     border: 2px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Mendorong tombol ke bawah */
+    justify-content: space-between; 
 }
 .teks-tengah {
     flex: 1;
@@ -131,7 +120,7 @@ body {
     padding: 20px;
 }
 .btn-wrapper {
-    padding: 0 20px 20px 20px; /* Padding di sekitar tombol */
+    padding: 0 20px 20px 20px; 
 }
 .btn-kembali {
     border: 2px solid black;
@@ -146,9 +135,8 @@ body {
     background-color: #ddd;
 }
 
-/* Kotak Kanan (Gambar) */
 .detail-gambar-box {
-    flex: 1; /* Proporsi lebih kecil */
+    flex: 1; 
     border: 2px solid black;
     display: flex;
     flex-direction: column;
@@ -164,22 +152,24 @@ body {
     object-fit: contain;
 }
 
-/* === SIDEBAR (Logo Kanan) === */
-.sidebar-judul {
-    margin-bottom: 20px;
-}
-.logo-produk-item {
-    border: 2px solid black;
-    width: 80%;
-    height: 80px;
+.logo-produk {
+    border: none;
+    width: 80%; 
+    height: 80px; 
     margin-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fff;
+    padding: 5px; 
+}
+.col-logo img, 
+.logo-produk img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
 }
 
-/* === BAGIAN FOOTER === */
 .row-footer {
     border-top: 2px solid black;
     height: 80px;
